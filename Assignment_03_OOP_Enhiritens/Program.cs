@@ -17,7 +17,36 @@
              */
             #endregion
 
+            #region Q2
 
+            //a) A parent class has a protected field. Can a child class in a different assembly access it? What about through an object instance from outside?
+            /*
+              1 -  child class in a different assembly can access a protected field inside itself.
+              2 -  Cannot access it through an object instance from outside.
+             */
+
+
+            //b) What is the difference between protected internal and private protected?
+            /*
+                Protected internal: accessible in same assembly OR in any child class in any assembly.
+                private protected: accessible only in child classes within the same assembly.
+             */
+
+
+            //c) What does the sealed keyword do when applied to a class? What about when applied to a method?
+            /*
+             sealed class: cannot be inherited .
+             Sealed method: cannot be overridden in derived classes.
+             */
+
+            //d) Can you create an object from a sealed class using new? Why or why not?
+            /*
+             Yes, you can create an object normally.
+             Reason: Sealed prevents inheritance only, it does not prevent instantiation.
+             */
+
+
+            #endregion
 
 
             #region Cinema System
